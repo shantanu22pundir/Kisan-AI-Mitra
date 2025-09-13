@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container mt-4">
+    <h1 class="text-center mb-4">Welcome to Kisan AI Mitra</h1>
+
+    <!-- Example Image Section -->
+    <div class="text-center">
+        <img src="{% static 'kisaan/static/profiles_pics/pexels-alejandro-barron-21404-96715.jpg' %}" 
+             alt="Farmer" 
+             class="img-fluid rounded shadow" 
+             style="max-width: 600px;">
+    </div>
+
+    <!-- Multiple Images in Grid -->
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <img src="{% static 'app_name/images/crops.png' %}" 
+                 alt="Crops" 
+                 class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'app_name/images/tractor.jpeg' %}" 
+                 alt="Tractor" 
+                 class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'app_name/images/farmer.jpg' %}" 
+                 alt="Farmer" 
+                 class="img-fluid rounded shadow">
+        </div>
+    </div>
+</main>
+{% endblock %}

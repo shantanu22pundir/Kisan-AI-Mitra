@@ -1,0 +1,80 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(191, 223, 191);
+
+}
+.abc{
+    background-color:aqua;
+    padding-top: 0;
+    margin-top: 0;
+    
+}
+.up{
+    text-align: center;
+    font-weight: 800;
+}
+.fm{
+    
+    margin-top: 30px;
+}
+.das{
+    text-align: center;
+}
+/* Dashboard styling */
+.das {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.das:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+.das h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Image styling */
+.das img {
+    display: block;
+    margin: 15px auto;       /* centers image */
+    border-radius: 10px;
+    max-width: 100%;          /* make image bigger (relative to container) */
+    height: auto;
+    border: 2px solid #ddd;
+}
+
+
+/* Paragraph (image size info) */
+.das p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* AI Output box */
+.das div {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* AI Output label */
+.das strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #16a085;
+    font-weight: bold;
+}

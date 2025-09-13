@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+
+<!-- Upload Button -->
+{% comment %} <div class="mb-3">
+    <a href="{% url 'upload_form' %}" class="btn btn-primary">Upload New Image</a>
+</div> {% endcomment %}
+
+{% for item in results %}
+<div class="das mb-4 p-3 border rounded">
+    <h3>{{ item.name }}</h3>
+    {% if item.image_url %}
+        <img src="{{ item.image_url }}" class="img-fluid d-block mx-auto mb-2" style="max-width:300px;">
+        <p>Image Size: {{ item.image_size }}</p>
+    {% endif %}
+    <div>
+        <strong>AI Output:</strong>
+        <div>
+            {{ item.ai_output|safe }}
+        </div>
+    </div>
+</div>
+{% empty %}
+<p>No submissions yet. <a href="{% url 'upload_form' %}">Upload one now</a>.</p>
+{% endfor %}
+{% endblock %}
