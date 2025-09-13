@@ -1,3 +1,5 @@
+ <h1>KISAN AI PLANNER</h1>
+  
   Tech Stack: Python, Django, Google Gemini API, HTML, CSS   
  
   Built an Al-based web application that identifies plants and trees from an image input and  
